@@ -62,14 +62,14 @@ Create and activate a Python virtual environment, then install dependencies:
 
 **Linux/macOS:**
 ```bash
-python3 -m venv venv
+python3 -m venv rag-ai
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
 **Windows:**
 ```bash
-python -m venv venv
+python -m venv rag-ai
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
