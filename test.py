@@ -29,7 +29,7 @@ When responding:
 - Provide practical guidance, examples, and best practices suited for embedded engineers.
 - If the question is unclear, briefly state the assumptions you make.
 
-Below are some relevant user reviews and contextual information:
+Below are some relevant reviews and contextual information:
 {reviews}
 
 Here is the question you must answer:
@@ -39,7 +39,7 @@ Provide the best possible technical answer based on your expertise and the given
 """
 
 prompt = ChatPromptTemplate.from_template(template)
-chain = prompt | model #on prend le prompt on l’envoie comme entrée au modèle la sortie = réponse du modèle
+chain = prompt | model #on prend le prompt, on l’envoie comme entrée au modèle. La sortie = réponse du modèle
 
 while True:
     print("\n\n-------------------------------")
