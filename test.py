@@ -4,21 +4,6 @@ from rag import retriever #importé depuis ton fichier rag.py, utilisé pour ré
 
 model = OllamaLLM(model="llama3.2")
 
-#template = """
-#You are an exeprt in answering questions about stm32f103 board
-
-#Here are some relevant reviews: {reviews}
-
-#Here is the question to answer: {question}
-#"""
-#Ce texte définit comment le LLM doit répondre.
-#Il comprend deux variables : {reviews} = informations récupérées par le retriever
-
-#{question} = question posée par l’utilisateur
-
-# Le prompt guide le modèle pour répondre comme un expert STM32F103.
-
-
 template = """
 You are a highly knowledgeable expert in STM32 microcontrollers, specifically the STM32F103 family.
 Your role is to provide clear, precise, and technically accurate answers.
